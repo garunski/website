@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://garunski.com/favicon.ico" rel="shortcut icon" />
+    <title>Garun Vagidov - Professional Programmer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      /*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+      body {
+        overflow-x: hidden;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      p.small {
+        font-size: 16px;
+      }
+
+      a,
+      a:hover,
+      a:focus,
+      a:active,
+      a.active {
+        outline: 0;
+        color: #ffd700;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-transform: uppercase;
+        font-family: Carme, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+      }
+
+      hr.star-light,
+      hr.star-primary {
+        margin: 25px auto 30px;
+        padding: 0;
+        max-width: 250px;
+        border: 0;
+        border-top: solid 5px;
+        text-align: center;
+      }
+
+      hr.star-light:after,
+      hr.star-primary:after {
+        content: "\f009";
+        display: inline-block;
+        position: relative;
+        top: -0.8em;
+        padding: 0 0.25em;
+        font-family: FontAwesome;
+        font-size: 2em;
+      }
+
+      hr.star-light {
+        border-color: #fff;
+      }
+
+      hr.star-light:after {
+        color: #fff;
+        background-color: #008080;
+      }
+      /*FFD700*/
+      hr.star-primary {
+        border-color: #464646;
+      }
+
+      hr.star-primary:after {
+        color: #464646;
+        background-color: #fff;
+      }
+
+      .img-centered {
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        color: #fff;
+        background: #008080;
+      }
+
+      header .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+
+      header img {
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      header .intro-text .name {
+        display: block;
+        text-transform: uppercase;
+        font-family: Carme, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+      }
+
+      header .intro-text .skills {
+        font-size: 1.25em;
+        font-weight: 300;
+      }
+
+      @media (min-width: 768px) {
+        header .container {
+          padding-top: 200px;
+          padding-bottom: 100px;
+        }
+
+        header .intro-text .name {
+          font-size: 4.75em;
+        }
+
+        header .intro-text .skills {
+          font-size: 1.75em;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .navbar-fixed-top {
+          padding: 10px 0;
+          -webkit-transition: padding 0.3s;
+          -moz-transition: padding 0.3s;
+          transition: padding 0.3s;
+        }
+
+        .navbar-fixed-top .navbar-brand {
+          font-size: 2em;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+
+        .navbar-fixed-top.navbar-shrink {
+          padding: 0px 0;
+        }
+
+        .navbar-fixed-top.navbar-shrink .navbar-brand {
+          font-size: 1.5em;
+        }
+      }
+
+      .navbar {
+        text-transform: uppercase;
+        font-family: Carme, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+      }
+
+      .navbar a:focus {
+        outline: 0;
+      }
+
+      .navbar .navbar-nav {
+        letter-spacing: 1px;
+      }
+
+      .navbar .navbar-nav li a:focus {
+        outline: 0;
+      }
+
+      .navbar-default,
+      .navbar-inverse {
+        border: 0;
+      }
+
+      .navbar-default {
+        background-color: #464646;
+      }
+
+      .navbar-default .navbar-brand:hover,
+      .navbar-default .navbar-brand:focus {
+        color: #ffd700;
+        background-color: transparent;
+      }
+
+      .navbar-default .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #ffd700;
+        background-color: transparent;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      section h2 {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      section.success {
+        background: #fff;
+        color: #464646;
+      }
+
+      section.success a,
+      section.success a:hover,
+      section.success a:focus,
+      section.success a:active,
+      section.success a.active {
+        outline: 0;
+        color: #464646;
+      }
+
+      section.success .btn-outline {
+        border: 2px solid #464646;
+      }
+
+      @media (max-width: 767px) {
+        section {
+          padding: 75px 0;
+        }
+
+        section.first {
+          padding-top: 75px;
+        }
+      }
+
+      .btn-outline {
+        margin-top: 15px;
+        border: solid 2px #fff;
+        font-size: 20px;
+        color: #fff;
+        background: 0 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-outline:hover,
+      .btn-outline:focus,
+      .btn-outline:active,
+      .btn-outline.active {
+        border: solid 2px #fff;
+        color: #008080;
+        background: #fff;
+      }
+
+      footer {
+        color: #fff;
+      }
+
+      footer h3 {
+        margin-bottom: 30px;
+      }
+
+      footer .footer-above {
+        padding-top: 50px;
+        background-color: #464646;
+      }
+
+      footer .footer-col {
+        margin-bottom: 50px;
+      }
+
+      footer .footer-below {
+        padding: 25px 0;
+        background-color: #008080;
+      }
+
+      .btn-social {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 45px;
+      }
+
+      .btn:focus,
+      .btn:active,
+      .btn.active {
+        outline: 0;
+      }
+
+      .list-inline > li {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    </style>
+
+    <!-- Custom Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Carme"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body id="page-top" class="index">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!--<img src="img/logo2.png" alt="">-->
+            <svg
+              id="svg3346"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 2341.6 2341.6"
+              style="height: 300px"
+              enable-background="new 0 0 2341.6 2341.6"
+            >
+              <style>
+                .st0 {
+                  fill: #ffffff;
+                }
+                .st1 {
+                  fill: #281e00;
+                }
+                .st2 {
+                  fill: #464646;
+                }
+                .st4 {
+                  fill: #008080;
+                }
+                .st5 {
+                  fill: #264a60;
+                }
+              </style>
+              <filter id="filter3454" color-interpolation-filters="sRGB">
+                <feblend
+                  id="feBlend3456"
+                  in2="BackgroundImage"
+                  mode="multiply"
+                />
+              </filter>
+              <circle class="st0" cx="1170.8" cy="1170.8" r="1170.8" />
+              <g id="g3348">
+                <path
+                  id="path3352"
+                  class="st1"
+                  d="M1148.8 105c-89.1 8.5-176 52.5-236.4 119.7-56.7 63.2-94.6 142.6-117.6 246.7-12.4 56-22.2 149-19.1 181.1 4.2 43.1 21.9 73.4 51.6 88.1 3.3 1.7 8.3 3.8 11 4.7l5.1 1.6 14.6 34.3c43.6 101.8 68.7 150.7 92.9 181.2 18.1 22.9 46.3 44.1 75.9 57 25.1 10.9 32.2 14.8 63.5 35 25.6 16.6 30 19 40.3 21.6 27.96 5.56 68.38 4.7 93.3.5 9.7-2.1 18-6.2 36.6-18.4 33.5-21.8 44.2-28 58.8-34.2 40.7-17.2 71.2-43.8 96.2-83.9 24-38.5 47.6-84.6 83.9-163.6l13.4-29 9.4-3.6c34.7-13.2 54.4-40 59.6-81.2 1.6-12.5.1-41.2-4.5-89.7-20.5-212.1-104-361.5-240.5-430.1-40-20.1-83-32.8-126.6-37.4-14.8-1.6-47-1.8-61.4-.4zm-146 426.2c9.1 9 20.9 19.9 26.2 24.1 40.6 32.4 108.61 61.23 157.41 69.63 96.32 18.62 212.52-39.6 212.52-39.6s6.54 24.26 31.76 46.77c5.7 4.9 8.6 5.2 50.1 5.3 33.6 0 39.1.2 43.5 1.7 9 3.1 12.3 8.7 14.5 24.7 2.7 19.6-4.6 36.6-18.9 44.5-3.8 2-8.3 3.2-18.8 4.7-23.4 3.4-39.8 7.7-45.3 11.8-1.8 1.3-44.14 139.78-46.54 147.38-27.4 86.1-19.63 66.38-82.51 113.91-34.3 18.52-46.55 37.36-83.7 36.39-8.4-.3-19.46-3.48-24.26-6.18-10.5-5.9-15.5-15.5-17-32.6-.9-10.2-2.5-14.9-6.4-19.1-3.5-3.8-6.5-4.7-15.9-4.7-15.2 0-19.4 5.3-21.6 27.3-1.6 15.6-7.3 25.2-18 30-7.4 3.4-20.9 3.5-34.8.4-25.7-5.9-30.34-12.58-74.08-37.82-43.74-25.24-39.27-19.37-70.27-102.37-7.1-18.9-40-146.09-40-148.19 0-5.1-33.26-12.23-65.46-16.83-12.9-1.9-16.9-3.8-24.3-12-9.2-10-12.2-24.5-8.8-41.6 2.5-12.3 4.8-15.8 12.1-18.9l6-2.5 39.5-.1c25.1-.1 40.7-.5 42.7-1.2 5.6-1.8 9-5 14.7-13.5 9.1-13.9 17.2-31.5 32.7-71.3 8.4-21.8 14.8-36.4 15.8-36.4.33.01 8.03 7.31 17.13 16.31z"
+                />
+                <path
+                  id="path3354"
+                  class="st1"
+                  d="M1163.8 870.5c-1.4.3-7.4 1.4-13.5 2.5-22.1 4.1-49.2 14.9-63.1 25.2-10.7 7.9-18.2 16.8-21 25.2-1.4 3.9-1.4 5 0 10.6 2.1 8.1 5.1 12.8 9.3 14.5 3.3 1.4 3.5 1.3 15.1-5.1 23.5-12.9 51.7-24.5 68.6-28 4.2-.8 11.8-1.5 17.1-1.5s12.9.7 17.1 1.5c16.9 3.5 45.1 15.1 68.7 28.1l11.8 6.5 3.7-1.8c4.4-2.2 6.6-5.7 8.7-14.1 1.5-5.7 1.5-6.7.1-11-2.9-8.5-12.3-19.2-23.6-26.9-13.5-9.1-39.4-19.1-60.5-23.3-10.5-2.1-32.7-3.5-38.5-2.4z"
+                />
+                <path
+                  id="path3358"
+                  class="st2"
+                  d="M839.8 1713.79v237.5h708v-475h-708v237.5z"
+                />
+              </g>
+              <g id="layer2">
+                <path
+                  class="st3 st4"
+                  d="M1264.1 1414.5l-55.4-216 18-37.5c20.4-42.4 23.1-48.7 25.3-59.5 1.8-8.3 1.1-14.1-1.9-16.6-1.7-1.4-6.4-1.2-30 1.5-38.9 4.3-66.9 4.1-93-.5-18.9-3.4-20.3-2.8-19.2 8.4 1 10 4.4 18.1 27 63.2l21.5 43c-17.9 70-32.8 143.5-47.6 214"
+                  id="path3356"
+                />
+                <path
+                  id="path3418"
+                  class="st5"
+                  d="M1139.7 1414.4s-113.7-280-140.9-335.2c-20.2-41-31.8-59.1-41.3-64.6l-4.2-2.4-34-.1c-18.7 0-38.5.1-44 .2-85.8 2.6-144.8 11-171.6 24.5-11 5.5-27.6 26.2-33.7 41.9-5.2 13.3-87.5 257.3-128.5 380.5-85.6 257.6-124.7 384.5-124.7 404.7 0 10.9 8.1 33.8 16.1 45.5 13.5 19.7 34.9 33.1 60.3 37.8 15.5 2.8 168.8 6.8 222.9 5.8l35.7-.6v-536.7"
+                />
+                <path
+                  id="path4295"
+                  class="st5"
+                  d="M1231.2 1414.4s113.7-280 140.9-335.2c20.2-41 31.8-59.1 41.3-64.6l4.2-2.4 34-.1c18.7 0 38.5.1 44 .2 85.8 2.6 144.8 11 171.6 24.5 11 5.5 27.6 26.2 33.7 41.9 5.2 13.3 87.5 257.3 128.5 380.5 85.6 257.6 124.7 384.5 124.7 404.7 0 10.9-8.1 33.8-16.1 45.5-13.5 19.7-34.9 33.1-60.3 37.8-15.5 2.8-168.8 6.8-222.9 5.8l-35.7-.6v-536.7"
+                />
+              </g>
+            </svg>
+
+            <div class="intro-text">
+              <span class="name">Garunski</span>
+              <hr class="star-light" />
+              <span class="skills"
+                >Web Developer - Professional Programmer - Software
+                Architect</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About</h2>
+            <hr class="star-primary" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>
+              Garun Vagidov, a developer for over
+              <script type="text/javascript">
+                document.write(new Date().getFullYear() - 2006);
+              </script>
+              years, has had the privilege of working with talented colleagues
+              on projects both big and small. He possesses a passion for quality
+              software with a focus on delivering quickly and often.
+            </p>
+          </div>
+          <div class="col-lg-12 text-center">
+            <a
+              href="https://garunski.medium.com/"
+              class="btn btn-lg btn-outline"
+            >
+              <i class="fa fa-medium"></i> Read Stories on Medium
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-6">
+              <h3>Location</h3>
+              <p>Chicago, IL</p>
+            </div>
+            <div class="footer-col col-md-6">
+              <h3>Around the Web</h3>
+              <ul class="list-inline">
+                <li>
+                  <a
+                    href="https://github.com/garunski"
+                    class="btn-social btn-outline"
+                    ><i class="fa fa-fw fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://garunski.medium.com/"
+                    class="btn-social btn-outline"
+                    ><i class="fa fa-fw fa-medium"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/garunvagidov"
+                    class="btn-social btn-outline"
+                    ><i class="fa fa-fw fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.paypal.me/garun"
+                    class="btn-social btn-outline"
+                    ><i class="fa fa-fw fa-paypal"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              &copy;
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script>
+              Garun Vagidov
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
